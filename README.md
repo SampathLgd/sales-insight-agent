@@ -6,13 +6,13 @@ The application is available as both a web interface and a command-line (CLI) to
 
 ## Features
 
-* **Natural Language Questions**: Ask questions like "What were our sales yesterday?" [cite: 39] or "Who are our top customers?".
-* **Smart Date Parsing**: Automatically parses relative dates like "today", "yesterday", and "last week"[cite: 52].
-* **Live API Integration**: Connects to the sandbox Sales API to fetch real-time data[cite: 57].
+* **Natural Language Questions**: Ask questions like "What were our sales yesterday?" or "Who are our top customers?".
+* **Smart Date Parsing**: Automatically parses relative dates like "today", "yesterday", and "last week".
+* **Live API Integration**: Connects to the sandbox Sales API to fetch real-time data.
 * **Accurate Data Analysis**: All calculations (totals, item counts, customer revenue) are done in Python (`data_processor.py`) *before* being sent to the LLM. This prevents LLM "hallucinations" and ensures 100% accurate metrics.
-* **API Caching**: Implements a 10-minute cache (`api_client.py`) to reduce API calls and improve response speed for repeated queries[cite: 51].
-* **Dual Interface**: Includes both a simple, effective command-line interface (`main.py`) and a user-friendly web UI (`app.py` + `index.html`)[cite: 47].
-* **Robust Error Handling**: The application gracefully handles API connection errors, date parsing failures, and empty data sets[cite: 48, 166].
+* **API Caching**: Implements a 10-minute cache (`api_client.py`) to reduce API calls and improve response speed for repeated queries.
+* **Dual Interface**: Includes both a simple, effective command-line interface (`main.py`) and a user-friendly web UI (`app.py` + `index.html`).
+* **Robust Error Handling**: The application gracefully handles API connection errors, date parsing failures, and empty data sets.
 
 ## Setup Instructions
 
